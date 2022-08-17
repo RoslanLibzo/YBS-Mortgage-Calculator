@@ -23,6 +23,7 @@ body {
     max-width: 1300px;
 }
 .left-side {
+    padding-left: 30px;
     width: 50%;
 }
 
@@ -35,4 +36,63 @@ body {
 .left-side .openCalculator:hover {
     background-color: var(--Secondary-col);
     border-color: var(--Secondary-col);
+}
+
+.calculator-body {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 0px 0px 50px rgb(0, 0, 0);
+}
+.calc-wrapper {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control {
+    margin-bottom: 10px;
+}
+.top-part-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.slider-input-control {
+    display: flex;
+    flex-direction: column;
+}
+.slider-input-control label{
+    margin-bottom: 20px;
+}
+.slider-input-control input {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.ybs-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.ybs-logo img{
+    width: 350px;
+    margin-bottom: 30px;
+}
+.submit-button {
+    background-color: var(--Primary-col);
+}
+.submit-button:hover {
+    background-color: var(--Secondary-col);
+}
+.submit-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

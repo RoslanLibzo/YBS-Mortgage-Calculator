@@ -19,9 +19,46 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio incidunt asperiores, laudantium ea reprehenderit nihil error architecto beatae, iusto explicabo blanditiis animi nulla nobis esse repudiandae corrupti aperiam doloribus a.</p>
                 <button class="openCalculator btn btn-primary">Open Mortgage Calculator</button>
             </div>
+            <div class="calculator-body">
+                <div class="calc-wrapper">
+                    <div class="ybs-logo">
+                        <img src="./images/YBS Logo - Non Transparent.jpg" alt="YBS-Logo">
+                    </div>
+                    <form class="calculator-form">
+                        <div class="input-control">
+                            <div class="top-part-form">
+                                <label for="deposit">Enter Deposit Ammount:</label>
+                                <input type="number" name="deposit" id="deposit" placeholder="ex. £20,000">
+                            </div>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <div class="top-part-form">
+                                <label for="propertyPrice">Enter Property Value:</label>
+                                <input type="number" name="propertyPrice" id="propertyPrice">
+                            </div>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <div class="top-part-form">
+                                <label for="interestRate">Interest Rate:</label>
+                                <input type="number" name="interestRate" id="interestRate" step="0.1">
+                            </div>
+                            <div class="error"></div>
+                        </div>
+                        <div class="slider-input-control">
+                            <label for="mortgageTerm">Mortgage Term:</label>
+                            <input type="range" name="mortgageTerm" id="mortgageTerm">
+                        </div>
+                        <div class="submit-button-container">
+                            <button type="submit" class="submit-button btn btn-primary">Calculate Monthly Repayments</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
             
         </div>
     </div>
-    
+    <script src="./app.js"></script>
 </body>
 </html>
