@@ -47,8 +47,11 @@
                             <div class="error"></div>
                         </div>
                         <div class="slider-input-control">
+                            <div class="mortgage-term">
+                                <span class="mortgage-term-value">23</span><span>Years</span>
+                            </div>
                             <label for="mortgageTerm">Mortgage Term:</label>
-                            <input type="range" name="mortgageTerm" id="mortgageTerm">
+                            <input type="range" name="mortgageTerm" id="mortgageTerm" min="0" max="45" step="1">
                         </div>
                         <div class="submit-button-container">
                             <button type="submit" class="submit-button btn btn-primary">Calculate Monthly Repayments</button>
