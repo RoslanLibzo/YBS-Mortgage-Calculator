@@ -125,3 +125,18 @@ input[type='range']::-webkit-slider-thumb {
   .mortgage-term-value {
     margin-right: 5px;
   }
+
+  .input-control.success input {
+    border-color: var(--Secondary-col);
+    border-width: 3px;
+  }
+  .input-control.error input {
+    border-color: rgb(230, 0, 0);
+    border-width: 3px;
+  }
+
+  .input-control .error {
+    color: rgb(230, 0, 0);
+    font-weight: 300;
+    font-size: 0.75rem;
+  }
