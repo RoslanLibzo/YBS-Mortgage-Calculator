@@ -2,6 +2,15 @@ console.log('JS Connected')
 //Stuff for Opening and Closing window
 const openCalcButton = document.querySelector('.openCalculator');
 const calculatorBody = document.querySelector('.calculator-body');
+const xCross = document.querySelector('.xCross');
+//Button Opens Calculator
+openCalcButton.addEventListener('click',()=>{
+    calculatorBody.style.display = "block";
+});
+//Cross Closes Calculator
+xCross.addEventListener('click',()=>{
+    calculatorBody.style.display = "none";
+})
 
 //Stuff for Slider Input
 const sliderInput = document.getElementById('mortgageTerm');

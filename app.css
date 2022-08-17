@@ -39,11 +39,12 @@ body {
 }
 
 .calculator-body {
+    display: none;
     min-height: 500px;
     max-width: 500px;
     width: 100%;
     position: absolute;
-    display: block;
+    
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -162,4 +163,9 @@ input[type='range']::-webkit-slider-thumb {
     font-color: rgb(0, 0, 0);
     right: 27px;
     top: 20px;
+    cursor: pointer;
+  }
+  .xCross:hover {
+    color: rgb(83, 83, 83);
+    cursor: pointer;
   }
