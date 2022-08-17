@@ -39,8 +39,9 @@ body {
 }
 
 .calculator-body {
-    height: 500px;
-    width: 500px;
+    min-height: 500px;
+    max-width: 500px;
+    width: 100%;
     position: absolute;
     display: block;
     left: 50%;
@@ -95,6 +96,7 @@ body {
     border-color: var(--Secondary-col);
 }
 .submit-button-container {
+    margin-bottom: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -139,4 +141,25 @@ input[type='range']::-webkit-slider-thumb {
     color: rgb(230, 0, 0);
     font-weight: 300;
     font-size: 0.75rem;
+  }
+
+  .calculated-value-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .calculated-value-section img {
+    width: 25px;
+    height: auto;
+    margin-bottom: 5px;
+  }
+  .xCross {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-color: rgb(0, 0, 0);
+    right: 27px;
+    top: 20px;
   }

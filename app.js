@@ -29,6 +29,9 @@ calcForm.addEventListener('submit', e => {
     calculateMonthlyPayments();
 });
 
+
+
+
 //Form-validation
 const validateInputs = () => {
     const depositVal = deposit.value.trim();
@@ -84,4 +87,15 @@ const setSuccess = (element)=>{
     inputControl.classList.add('success');
     inputControl.classList.remove('error');
 
+}
+
+
+//Select Value for Monthly payments
+const monthlyPaymentsVal = document.getElementById('monthlyVal')
+// Calculate Monthly Repayments
+const calculateMonthlyPayments = ()=>{
+    const loan = propertyPrice.value - deposit.value;
+    const sliderValue = sliderInput.value.trim();
+    const monthlyPayments = (interestRate.value/100/12)/(1 - Math.pow((1 + interestRate.value/100/12),(-sliderValue*12)) )*loan;
+    monthlyPaymentsVal.innerText = monthlyPayments.toFixed(2);
 }
