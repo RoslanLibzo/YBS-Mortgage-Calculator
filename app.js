@@ -3,13 +3,16 @@ console.log('JS Connected')
 const openCalcButton = document.querySelector('.openCalculator');
 const calculatorBody = document.querySelector('.calculator-body');
 const xCross = document.querySelector('.xCross');
+const greyOverlay = document.querySelector('.grey-overlay')
 //Button Opens Calculator
 openCalcButton.addEventListener('click',()=>{
     calculatorBody.style.display = "block";
+    greyOverlay.style.display="block";
 });
 //Cross Closes Calculator
 xCross.addEventListener('click',()=>{
     calculatorBody.style.display = "none";
+    greyOverlay.style.display = "none";
 })
 
 //Stuff for Slider Input
