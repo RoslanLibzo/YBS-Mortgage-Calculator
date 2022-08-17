@@ -92,7 +92,7 @@ body {
     justify-content: center;
 }
 .ybs-logo img{
-    width: 350px;
+    max-width: 80%;
     margin-bottom: 30px;
 }
 .submit-button-container .submit-button {
@@ -167,7 +167,7 @@ input[type='range']::-webkit-slider-thumb {
     font-size: 1.5rem;
     font-weight: bold;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     right: 27px;
     top: 20px;
     cursor: pointer;
@@ -175,4 +175,17 @@ input[type='range']::-webkit-slider-thumb {
   .xCross:hover {
     color: rgb(83, 83, 83);
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 1000px){
+    .top-part-form {
+        display: flex;
+        flex-direction: column;
+    }
+    #mortgageTerm {
+        margin-bottom: 40px;
+    }
+    .mortgage-term {
+        transform: translate(-50%, 70%);
+    }
   }
