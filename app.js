@@ -14,6 +14,11 @@ xCross.addEventListener('click',()=>{
     calculatorBody.style.display = "none";
     greyOverlay.style.display = "none";
 })
+//Grey-overlay Closes calculator
+greyOverlay.addEventListener('click',()=>{
+    calculatorBody.style.display = "none";
+    greyOverlay.style.display = "none";
+})
 
 //Stuff for Slider Input
 const sliderInput = document.getElementById('mortgageTerm');
